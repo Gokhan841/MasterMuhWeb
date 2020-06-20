@@ -1,0 +1,257 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB7418F3-5F35-4EAF-8CC1-4EB1D993CBA8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>McgWS</RootNamespace>
+    <AssemblyName>McgWS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anasayfa.html" />
+    <Content Include="AtıkToplamaSistemleri.html" />
+    <Content Include="AtıkYakma.html" />
+    <Content Include="Cozumlerimiz.html" />
+    <Content Include="CSS\reset.css" />
+    <Content Include="CSS\StyleSheet57.css" />
+    <Content Include="Hakkımızda.html" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\air-blower.png" />
+    <Content Include="Images\anasayfaparalax.jpg" />
+    <Content Include="Images\AnasayfaSKkapak.JPG" />
+    <Content Include="Images\arkapln2.JPG" />
+    <Content Include="Images\atıkyakma1.jpg" />
+    <Content Include="Images\atıkyakmaS1.jpg" />
+    <Content Include="Images\atıkyakmaS2.jpg" />
+    <Content Include="Images\atıkyakmaS3.jpg" />
+    <Content Include="Images\benzinist.jpg" />
+    <Content Include="Images\callcenter.jpg" />
+    <Content Include="Images\contactYazısı.png" />
+    <Content Include="Images\cotact.jpg" />
+    <Content Include="Images\cozumlerımızkapak.jpg" />
+    <Content Include="Images\End.tesis.jpg" />
+    <Content Include="Images\Footer\email.png" />
+    <Content Include="Images\Footer\fax.png" />
+    <Content Include="Images\Footer\icons8-facebook-96.png" />
+    <Content Include="Images\Footer\icons8-instagram-96.png" />
+    <Content Include="Images\Footer\icons8-twitter-96.png" />
+    <Content Include="Images\Footer\location.png" />
+    <Content Include="Images\Footer\tel.png" />
+    <Content Include="Images\grupsirket\ayr.JPG" />
+    <Content Include="Images\grupsirket\datel.JPG" />
+    <Content Include="Images\grupsirket\mcgsigorta.JPG" />
+    <Content Include="Images\grupsirket\ptsmarket.JPG" />
+    <Content Include="Images\grupsirket\tse.JPG" />
+    <Content Include="Images\grupsirket\ıso.JPG" />
+    <Content Include="Images\hakkımızda.png" />
+    <Content Include="Images\HakkımızdaYazısı.png" />
+    <Content Include="Images\hospital.jpg" />
+    <Content Include="Images\logo.JPG" />
+    <Content Include="Images\monom.jpg" />
+    <Content Include="Images\aboutus.jpg" />
+    <Content Include="Images\question.png" />
+    <Content Include="Images\Refereans\abdiibrahim.jpg" />
+    <Content Include="Images\Refereans\acibadem-kadikoy.png" />
+    <Content Include="Images\Refereans\Amerikan has.jpg" />
+    <Content Include="Images\Refereans\bakü.jpg" />
+    <Content Include="Images\Refereans\bursa.jpg" />
+    <Content Include="Images\Refereans\erzurum sehir.jpg" />
+    <Content Include="Images\Refereans\floranceng.jpg" />
+    <Content Include="Images\Refereans\gata.jpg" />
+    <Content Include="Images\Refereans\gatah.jpg" />
+    <Content Include="Images\Refereans\hatay dh.jpg" />
+    <Content Include="Images\Refereans\Maldivler.jpg" />
+    <Content Include="Images\repair.png" />
+    <Content Include="Images\supermarket.jpg" />
+    <Content Include="Images\thalmayr\20171109_090123_verkleinert.jpg" />
+    <Content Include="Images\thalmayr\20190529_110748_verkleinert.jpg" />
+    <Content Include="Images\thalmayr\64demo_03_blue.jpg" />
+    <Content Include="Images\Urun\atibody.JPG" />
+    <Content Include="Images\Urun\AtiSlayt1.JPG" />
+    <Content Include="Images\Urun\atislayt2.JPG" />
+    <Content Include="Images\Urun\atisllayt1.JPG" />
+    <Content Include="Images\Urun\AtıkTY5.png" />
+    <Content Include="Images\thalmayr\gelbe-rohrpostbuechse-mit medikament.jpg" />
+    <Content Include="Images\thalmayr\Hanter-Pnuematic-Tube-Systems-main.jpg" />
+    <Content Include="Images\thalmayr\hem2.jpg" />
+    <Content Include="Images\thalmayr\hems.jpg" />
+    <Content Include="Images\thalmayr\images %281%29.jpg" />
+    <Content Include="Images\thalmayr\images %282%29.jpg" />
+    <Content Include="Images\thalmayr\images %283%29.jpg" />
+    <Content Include="Images\thalmayr\images.jpg" />
+    <Content Include="Images\thalmayr\indir %281%29.jpg" />
+    <Content Include="Images\thalmayr\indir %282%29.jpg" />
+    <Content Include="Images\thalmayr\kachel_frontladestation.jpg" />
+    <Content Include="Images\thalmayr\marimatik.gif" />
+    <Content Include="Images\thalmayr\Marimatik2.jpg" />
+    <Content Include="Images\thalmayr\maxresdefault.jpg" />
+    <Content Include="Images\thalmayr\station-wb.jpg" />
+    <Content Include="Images\thalmayr\Topladestation_Typ_08.jpg" />
+    <Content Include="Images\thalmayr\TransLogic Nexus Station   loading.jpg" />
+    <Content Include="Images\thalmayr\unnamed.jpg" />
+    <Content Include="Images\thalmayr\unnamed.png" />
+    <Content Include="Images\UrunlerYazısı.png" />
+    <Content Include="Images\Urun\ati.jpg" />
+    <Content Include="Images\Urun\atıktoplama.jpg" />
+    <Content Include="Images\Urun\AtıkTY1.png" />
+    <Content Include="Images\Urun\AtıkTY2.png" />
+    <Content Include="Images\Urun\AtıkTY3.png" />
+    <Content Include="Images\Urun\AtıkTY4.png" />
+    <Content Include="Images\Urun\atıkyakma.jpg" />
+    <Content Include="Images\Urun\Marimatik2.jpg" />
+    <Content Include="Images\Urun\pmc1.png" />
+    <Content Include="Images\Urun\pmco2.jpg" />
+    <Content Include="Images\Urun\pmco3.jpg" />
+    <Content Include="Images\Urun\PneumatiCSema.jpg" />
+    <Content Include="Images\Urun\pneumatic_hospital.sem.jpg" />
+    <Content Include="Images\Urun\PnomatikNelerTtasınır.jpg" />
+    <Content Include="Images\Urun\PnomatikSupermarket.jpg" />
+    <Content Include="Images\Urun\Pnömatik EndüstriyelTesis.jpg" />
+    <Content Include="Images\Urun\PnömatikBanka.jpg" />
+    <Content Include="Images\Urun\prfotelmtfk.jpg" />
+    <Content Include="Images\Urun\CozumlerimizKapak.png" />
+    <Content Include="Images\Urun\ProfMC1.JPG" />
+    <Content Include="Images\Urun\ProfMC2.JPG" />
+    <Content Include="Images\Urun\PTS-supermarket.jpg" />
+    <Content Include="Images\Urun\PTS_Lab.jpg" />
+    <Content Include="Images\Uygulamalryazısı.png" />
+    <Content Include="ProfesyonelMutfakCozumleri.html" />
+    <Content Include="İletisim.html" />
+    <Content Include="Referanslar.html" />
+    <Content Include="ReferansOneCıkanlar.html" />
+    <Content Include="Web.config" />
+    <Content Include="PnömatikSistem.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\grupsirket\Thumbs.db" />
+    <Content Include="Dosyalar\ATI gen-eng.pdf" />
+    <Content Include="Dosyalar\MASTER LTS.pdf" />
+    <Content Include="Dosyalar\T2-TH-ORJ-4P-V2%28HSP%29.pdf" />
+    <Content Include="Dosyalar\T3-TH-SYS&amp;CARRIER-2P.pdf" />
+    <Content Include="Dosyalar\T7-TH INDUSTRY %281%29.pdf" />
+    <Content Include="Dosyalar\T8-TH-Supermarket.pdf" />
+    <Content Include="Dosyalar\Broşür 1.pdf" />
+    <Content Include="Dosyalar\Broşür 2.pdf" />
+    <Content Include="Dosyalar\Broşür 3.pdf" />
+    <Content Include="Dosyalar\Broşür 4.pdf" />
+    <Content Include="Dosyalar\Broşür 5.pdf" />
+    <Content Include="Dosyalar\MetrotaifunSunum.pdf" />
+    <Content Include="Dosyalar\in1.pdf" />
+    <Content Include="Dosyalar\in2.pdf" />
+    <Content Include="Dosyalar\in3.pdf" />
+    <Content Include="Dosyalar\in4.pdf" />
+    <Content Include="Dosyalar\in5.pdf" />
+    <Content Include="Dosyalar\in6.pdf" />
+    <Content Include="Dosyalar\P1.pdf" />
+    <Content Include="Dosyalar\p2.pdf" />
+    <Content Include="Dosyalar\p3.pdf" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51789</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

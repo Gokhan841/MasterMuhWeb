@@ -1,0 +1,1182 @@
+﻿body {
+    background: #fff; /*arka plan rengi*/
+    color: #3f3f3f; /*font rengi*/
+    font: 14px;
+    font-family: Arial;
+}
+
+.sectionArea {
+    padding: 80px 0px;
+    /*border:solid aqua 5px;*/
+}
+
+header {
+    background-color: whitesmoke;
+}
+.menu ul li ul{
+    display:none;
+    position:absolute;
+    height:5px;
+    width:400px;
+    top:50px;
+    background-color:none;
+}
+
+    .menu ul li ul a{
+font-size:12px;
+    }
+    .menu ul li:hover ul {
+        display: block;
+    }
+
+h1 {
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader {
+    background-color: #334F70;
+    border-bottom: 7px solid #404040;
+    color: white;
+    display: inline-block; /*block olsaydı tüm saıtırı kapsardı*/
+    line-height: 60px;
+    height: 60px;
+    font-size: 24px;
+    padding: 5px 40px; /*çerçeveyi aşşağıdan yukarıdan 5 px sağsol 40px genişletti.*/
+    margin-bottom: 30px; /*altında olan nesneyi 30 aşağı atar*/
+}
+
+h3 {
+    font-size: 16px;
+    color: #334F70;
+    font-weight: bold;
+    transition: all .8s ease; /*transation  hover durumunda hep değişmesini istediğimiz yerlere verilir
+}*/
+}
+
+.col3 {
+    flex-grow: 1; /*sütun uzunluklarının hepsini eşit yapar.*/
+    width: 33.33%;
+    /*border:solid red 4px;*/
+}
+
+.col4 {
+    flex-grow: 1; /*sütun uzunluklarının hepsini eşit yapar.*/
+    width: 25%;
+    /*border: solid yellow 1px;*/
+    /*padding:40px;*/
+}
+
+.col2 {
+    flex-grow: 1; /*sütun uzunluklarının hepsini eşit yapar.*/
+    width: 50%;
+    /*border: solid red 1px;*/
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto; /*ekranın yüzde doksanını ortalayarak kapsasın*/
+    display: flex; /*yanyana getirir.*/
+}
+
+.logo {
+    margin-right: auto; /*kendinden sonra gelen classı mümkün olduğu kadar sağa kaydırdı*/
+}
+
+header .logo img {
+    height: 70px;
+    width: 170px;
+    display: block;
+}
+
+.menu li {
+    float: left; /*bitişik olarak yan yana getirir.*/
+}
+
+    .menu li a {
+        display: block; /*bunu vererek elemetlere genişlik yükseklik değer verebiliriz*/
+        padding: 27px 17px;
+        text-decoration: none; /*altı çizili değil*/
+        letter-spacing: 2px;
+        color: #333333;
+        transition: all .4s ease;
+    }
+
+    .menu li:hover a {
+        background: #334F70;
+        color: #fff;
+    }
+
+#MainSlider {
+    height: 500px;
+    background: url('../Images/AnasayfaSKkapak.JPG') center center no-repeat;
+    background-size: cover; /*tüm alanın içine yerleştirir*/
+}
+
+.slider {
+    width: 100%;
+}
+
+.marq1 h1 {
+    text-align: center;
+    font-size: 35px;
+    color: floralwhite;
+}
+
+.marq2 h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: #AED581;
+}
+
+#mainCaption {
+    height: 500px;
+    background: rgba(0,0,0,.45); /*arkaplanı biraz koyulaştırdık.*/
+}
+
+.caption {
+    display: flex; /*yan yana alır*/
+    flex-direction: column; /*sütn şeklinde alt alta getirir.*/
+    align-items: center; /*ortalar*/
+    justify-content: center; /*tam ortalı olacak şekilde hizalanırar.*/ /*justify-content için flex özellği verilmiş olmalı*/
+    width: 100%;
+    color: aliceblue;
+}
+
+.featureBody .container {
+    justify-content: space-between;
+    /*İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler.*/
+}
+
+.featuresTop {
+    text-align: center; /*yatay olarak ortaladık*/
+}
+
+.item { /*itemla col3 üst üste şu an*/
+    padding: 10px 20px;
+    border: solid 2px red;
+    /*margin:40px; dersek item col3 içine 40 px gömülür.*/
+}
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    /*border:solid black 2px;*/
+    vertical-align: top; /*dikey olarak otaladık*/
+}
+
+    .zoom img {
+        display: block; /* iteme inlineblock demiştik buna displayblock diyerek o alanın tamamının kapsadık*/
+        width: 100%; /*alanın tamamını kaplattık*/ /*iki satırı bir düşün*/
+        /*height:auto;*/
+        height: 300px;
+        transition: all .5s ease; /*hoverdda üzerine gelindiğinde .5 snde değişim olsun*/
+    }
+
+.item .itemtext {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid green;
+}
+
+.item:hover .zoom img {
+    transform: scale(1.25); /*zoom içindeki görselin 1,25 kat artmasını sağladık.*/
+}
+
+.item:hover h3 {
+    color: white;
+}
+
+.item p {
+    margin: 20px 0px;
+}
+
+.item:hover .itemtext {
+    background: #500d16;
+    color: white;
+}
+
+.btnDetails {
+    color: #500d16;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: all .5s ease;
+    background-color: dimgrey;
+}
+
+.item:hover .btnDetails {
+    color: #fff;
+    border: 1px solid green;
+    background: #500d16;
+}
+
+#parallax {
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url('../Images/Urun/CozumlerimizKapak.png');
+    background-attachment: fixed; /*bu resmin arka planda sabit kalmasını sağladı.*/
+    background-size: cover;
+    background-position: center;
+    text-align: center; /*üzerindeki nesneleri ortaladık*/
+}
+
+    #parallax p {
+        color: #fff;
+        margin-top: 40px;
+        float: right;
+        font-family: 'Courier New';
+        font-size: 21px;
+        font-style: italic;
+    }
+
+.parallaxTop .sectionHeader {
+    width: 90px;
+    margin-right: 40px;
+    background-color: #689F38;
+    opacity: .8;
+}
+
+.engineTop {
+    text-align: center;
+}
+.engineContainer a{
+    color:white;
+}
+
+.engineContainer {
+    position: relative; /*bu şekile diğer divleri absoluete yapabliriz.*/
+    width: 90%;
+    height:300px;
+    /*border: solid rgba(119, 136, 153,.7) 1px;*/
+}
+.engineContainer img{
+    height:100%;
+    width:100%;
+}
+
+.imageOver {
+    display: block; /*uzunluk ve genişlik ölçüsü verebiliriz*/
+    width: 100%;
+    height: 300px;
+}
+
+.engineOverlay {
+    position: absolute; /*kendini kapsayan relative göre abs. bu şekilde net uzaklık değerleri verilebilir.*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(119, 136, 153,.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay {
+    width: 100%;
+}
+
+.engineText {
+    color: white;
+    white-space: nowrap; /*yazının alt alta düşmesini önleyerek hep yatayda kalmasını sağlar.*/
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*son 4 satırı ortalama işlevi için yazdık*/
+}
+
+.engineOverlay2 {
+    position: absolute; /*kendini kapsayan relative göre abs. bu şekilde net uzaklık değerleri verilebilir.*/
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(119, 136, 153,.7);
+    overflow: hidden;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+}
+
+.witem {
+    padding: 5px 20px;
+    /*border: solid 2px red;*/
+    /*margin:40px; dersek item col3 içine 40 px gömülür.*/
+}
+
+.wimg {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+    /*border: solid brown 2px;*/
+    border-radius: 150px;
+    margin-left: 40px;
+}
+
+    .wimg img {
+        display: block; /* iteme inlineblock demiştik buna displayblock diyerek o alanın tamamının kapsadık*/
+        width: 100%; /*alanın tamamını kaplattık*/ /*iki satırı bir düşün*/
+        /*height:auto;*/
+        height: 180px;
+        transition: all .5s ease;
+        border-radius: 150px;
+    }
+
+.witemtext p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.witemtext h3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer {
+    background: #334F70;
+    text-align: left;
+    height: 250px;
+}
+
+
+.footeritem {
+    /*padding: 110px;*/
+    /*margin-top: -115px;*/
+    /*border:solid black 1px;*/
+    height:100%;
+    width:100%;
+}
+
+    .footeritem img {
+        height: 70px;
+        opacity: .9;
+    }
+
+footer h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+footer p {
+    line-height: 20px;
+    color: #95A5A6;
+}
+
+
+.footerLinks a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footerLinks li {
+    margin-bottom: 25px;
+}
+
+.footerLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #95A5A6;
+}
+
+.soclinks {
+    width: 20%;
+    height: 25%;
+    display: inline-block;
+    margin-left: 8%;
+    padding-top: 50px;
+}
+
+    .soclinks img:hover {
+        transform: scale(1.1);
+        opacity: 0.6;
+    }
+
+.socialLinks li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    /*padding:40px;*/
+    margin: 23px;
+}
+
+#ikon2 {
+    height: 25px;
+    width: 25px;
+}
+
+ #ikon2 img {
+        height: 22px;
+        width: 22px;
+        margin: auto;
+    }
+
+.footcont {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#conth3 {
+    color: #fff;
+    text-align: center;
+}
+
+.monoBody{
+    border:solid #808080 3px;
+    width:100%;
+    height:400px;
+}
+    .monoBody .container {
+        /*border: solid green 1px;*/
+        width: 100%;
+        height: 98%;
+        background-image: url('../Images/arkapln2.JPG');
+    }
+.monoContainer{
+    width:99.5%;
+    height:99.5%;
+    /*border:solid purple 1px;*/
+    margin:0 auto;
+    vertical-align:middle;
+}
+.monoContainer img{
+    width:100%;
+    height:100%;
+}
+.line{
+    width:99%;
+    height:33%;
+    /*border:solid 2px pink;*/
+   display:flex;
+   margin:auto 0;
+   padding:5px 0;
+}
+#mpic {
+    /*border: solid black 1px;*/
+    width: 20%;
+    height: 95%;
+    vertical-align: text-top;
+}
+#minf {
+    /*border: solid 3px green;*/
+    width: 80%;
+    height: 95%;
+}
+#mpic img{
+    height:60%;
+    width:60%;
+    padding:20px; /*ŞUNU BİR RESPONSİVE ORTALA*/
+}
+
+                                    
+                                    /*A  B  O  U  T*/
+#contactSlider {
+    height: 250px;
+    background-size: cover;
+    /*border: solid 3px green*/
+}
+
+#contactCaption {
+    height: 250px;
+    background: rgba(0,0,0, .8);
+    background: url('../Images/hakkımızda.png') center center no-repeat;
+    background-size:cover;
+
+}
+.marquee {
+    /*border: solid 3px yellow;*/
+    height:20%;
+    width:80%;
+    margin-left:0;
+}
+.marquee h1 {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 20px;
+}
+#marqueeAbout{
+
+}
+#marqueeContact {
+    background-image: url('../Images/Contact.jpg');
+}
+#aboutCaption {
+    height: 250px;
+    /*background: rgba(0,0,0, .8);*/
+    background: url('../Images/cotact.jpg') center center no-repeat;
+    background-size: cover;
+}
+#aboutCaption h1{
+    color:#d3d3d3;
+}
+
+#abus{
+height:800px;
+width:100%;
+/*border:solid black 1px;*/
+margin-top:50px;
+margin-bottom:50px;
+}
+#abusbody{
+    height:100%;
+    width:80%;
+    margin-left:10%;
+    /*border:red solid 1px;*/
+}
+.abusbodyitem {
+flex-grow:1;
+/*border:solid yellow 1px;*/
+height:95%;
+display:inline-block;
+margin-top:1%;
+}
+#ablepart {
+    width: 18%;
+    border: solid grey 2px;
+    float:left;
+}
+#abripart {
+    width: 76%;
+    /*border: solid green 1px;*/
+    margin-left:4%;
+   float:left;
+}
+#abripart p{
+    font-size:18px;
+    color:black;
+    line-height:1.5;
+    text-align:justify;
+}
+    #abripart h3{
+        font-size:20px;
+        margin-bottom:15px;
+        text-decoration:underline;
+    }
+    .ablepartiem {
+        width: 98%;
+        height: 100px;
+        /*border: solid black 2px;*/
+        margin-bottom: 20px;
+    }
+.ablepartiem img{
+width:98%;
+height:98%;
+
+ }
+    /*   C   O   N   T   A   C   T     */
+    .mContactBody {
+        /*border: solid #808080 3px;*/
+        width: 100%;
+        height: 650px;
+    }
+
+    .mContactBody .container {
+        /*border: solid green 1px;*/
+        width: 80%;
+        height: 98%;       
+        /*background-color: #FFD9D9;*/
+        padding-top:50px;
+      
+    }
+#panel {
+    border: 1px solid #F0F4F3;
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-top: 2px;
+    background-color: #C1BBA8;
+    border-radius: 15px;
+    padding: 20px;
+}
+    #panel h1 {
+        text-align: center;
+    }
+
+    #panel p {
+        color: #333333;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #panel a {
+        color: #333333;
+        text-decoration: none;
+    }
+input {
+    width: 60%;
+    height: 32px;
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #EFE7CC;
+    border-bottom: 2px solid #333333;
+    padding: 0 5px;
+}
+#explanation{
+    height:95px;
+}
+
+    input:focus {
+        outline: 0;
+        width: 65%;
+        transition: .5s;
+        border: 2px solid #333333;
+        border-radius: 10px;
+    }
+
+button {
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin-top: 15px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 2px;
+}
+
+    button:hover {
+        background-color: white;
+        color: #333333;
+        transition: 1s;
+        border: 1px solid #333333;
+    }
+    #adress p{
+    font-size:21px;
+    margin-top:30px;
+    }
+#customerservice{
+    padding-top:5px;
+    /*border:solid black 1px;*/
+    height:200px;
+    width:100%;
+    padding-bottom:30px;
+}
+#customerservice img{
+    height:200px;
+    width:87%;
+}
+#map{
+    width:100%;
+    /*border:solid black 2px;*/
+    height:250px;
+    margin:0 auto;
+}
+#map iframe{
+    height:100%;
+    width:100%;
+}
+
+                                             /*   R  E  F  E  R  A  N  S  L  A  R   */
+.refBody {
+    /*border: solid red 3px;*/
+    
+    width: 100%;
+    height: 500px;
+    margin-bottom:220px;
+}
+    .refBody h2{
+        font-size:25px;
+        margin-bottom:20px;
+        padding-top:5px;
+        color:black;
+    }
+.refa {
+    background: green;
+    font-size: 25px;
+    color: white;
+    margin-left: 80px;
+    animation: blinker 0.9s linear infinite;
+    text-decoration: none;
+    text-align:center
+}
+.refa:hover{
+background:#334F70;
+text-decoration:solid;
+}
+
+    .refBody .container {
+        /*border: solid green 1px;*/
+    
+        width: 80%;
+        height: 50%;
+    }
+  
+
+.refContainer {
+    width: 99.5%;
+    height: 105%;
+    /*border:solid purple 1px;*/
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.refContainer p{
+text-align:justify;
+line-height:1.5;
+
+}
+.refContainer2 {
+    width: 100%;
+    height: 90%;
+    /*border: solid purple 7px;*/
+    margin: 0 auto;
+    vertical-align: middle;
+  
+}
+.refContainer2 p{
+    margin-bottom:15px;
+    font-weight:bold;
+}
+.ref3s {
+    width: 30%;
+    height: 80%;
+    border: solid #808080 3px;
+    display: inline-block;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+.refContainer img{
+    width:100%;
+    height:100%;
+}
+.ref3s img {
+    width: 100%;
+    height: 100%;
+}
+                                             /* ürünler*/
+#UrunSlider {
+    height: 250px;
+    background-size: cover;
+}
+#UrunCaption {
+    height: 250px;
+    background: rgba(0,0,0, .8);
+    background: url('../Images/Urun/CozumlerimizKapak.png') center center no-repeat;
+    background-size: cover;
+}
+                          /*pömatik*/
+.pslider{
+    height:350px;
+    width:100%;
+    /*border:solid 3px black;*/
+}
+.pslider img {
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+   
+}
+.pneuBody {
+    /*border: solid red 3px;*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height:2400px ;
+    /*margin-bottom: 50px;*/
+    margin:0 auto;
+}
+
+.pneuBody h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    color: #500d16;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+.pneuBody h3{
+    margin-bottom:20px;
+}
+
+.pneuBody p {
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.pneuBody br{
+  line-height:2.5;
+}
+    .pneuBody .container1 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 265px;
+        margin-top: 20px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+.pneuCol1 {
+    margin-top:20px;
+    height: 100%;
+    /*border:solid purple 1px;*/
+    margin: 0 auto;
+    display:inline-block;
+    vertical-align:middle;
+}
+#pneucol1a {
+    width: 73%;
+    
+}
+#pneucol1b{
+    width:25%;
+ float:right;
+}
+#pneucol1b img{
+height:100%;
+width:100%;
+}
+.pneuBody .container2 {
+    /*border: solid green 2px;*/
+    width: 100%;
+    height: 420px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+
+.pneuCol2 {
+    margin-top:20px;
+    height: 100%;
+    /*border:solid purple 1px;*/
+    margin: 0 auto;
+    display:inline-block;
+    vertical-align:middle;
+}
+#pneucol2a {
+    width: 35%;    
+}
+    #pneucol2a img {
+        height: 100%;
+        width: 100%;
+    }
+#pneucol2b {
+    width: 63%;
+    float: right;
+}
+.pneuBody .container3 {
+    /*border: solid green 2px;*/
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding:10px 0px;
+}
+.pneuBody .container3x {
+    /*border: solid green 2px;*/
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+}
+.pneuBody .container4 {
+    /*border: solid green 2px;*/
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+    .pneuBody .container4 img {
+        width: 70%;
+        height: 100%;
+        padding: 10px 15%;
+        margin:0 auto;
+    }
+.container5 {
+    /*border: solid green 1px;*/
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    
+}
+#pneucol5a {
+    height: 40px;
+    border: solid #95A5A6 1px;
+    background-color: #334F70
+}
+#pneucol5b {
+    height: 150px;
+    border: solid #95A5A6 2px;
+    background-color: #F0f0f0;
+    padding:10px;
+}
+.pdf{
+    width:100%;
+    height:700px;
+}
+.pdf embed{
+    height:100%;
+    width:100%;
+}
+.p5bitem a{
+    padding-top:20px;
+}
+.doc li{
+    margin-bottom:5px;
+}
+                                                  /*atık toplama yakma*/
+.atıktyBody .container2 {
+    /*border: solid green 2px;*/
+    width: 100%;
+    height: 420px;
+  margin:0 auto;
+  padding:10px 0px;
+}
+#atıktycol5b {
+    height: 190px;
+    border: solid #95A5A6 2px;
+    background-color: #F0f0f0;
+}
+
+#atıktycol2a {
+    width: 35%;
+    height:90%;
+    /*border:solid aqua 2px;*/
+}
+
+    #atıktycol2a img {
+        height: 100%;
+        width: 100%;
+    }
+.atıktyBody {
+    /*border: solid red 3px;*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 1350px;
+    margin-bottom: 100px;
+    margin-top:80px;
+}
+    .atıktyBody .container3 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+    .atıktyBody .container1 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 248px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+.atıktyBody h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    color: #500d16;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.atıktyBody {
+    margin-bottom: 20px;
+}
+
+.atıktyBody p {
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.atıktyBody br {
+    line-height: 2.5;
+}
+
+                                          /*Profesyonel Mutfak Çözümleri*/
+
+#pmoccol1a {
+    width: 65%;
+}
+
+#pmoccol1b {
+    width: 33%;
+    float: right;
+}
+#pmoccol1b img {
+    height: 100%;
+    width: 100%;
+}
+.pmocBody {
+    /*border: solid red 3px;*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+
+    .pmocBody h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        color: #500d16;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .pmocBody h3 {
+        margin-bottom: 20px;
+    }
+
+    .pmocBody p {
+        text-align: justify;
+        line-height: 1.9;
+    }
+
+    .pmocBody br {
+        line-height: 2.5;
+    }
+
+    .pmocBody .container1 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 370px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+
+    .pmocBody .container2 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+
+.pneuCol2 {
+    margin-top: 20px;
+    height: 100%;
+    /*border:solid purple 1px;*/
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#pneucol2a {
+    width: 35%;
+}
+
+    #pneucol2a img {
+        height: 100%;
+        width: 100%;
+    }
+
+#pneucol2b {
+    width: 63%;
+    float: right;
+}
+.pmocBody .container5 {
+    /*border: solid green 1px;*/
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+#pmoccol5a {
+    height: 40px;
+    border: solid #95A5A6 1px;
+    background-color: #334F70
+}
+
+#pmoccol5b {
+    height: 100px;
+    border: solid #95A5A6 2px;
+    background-color: #F0f0f0;
+}
+
+                                                /*Atık Yakma Sistemleri*/
+
+
+#atıkyscol5b {
+    height: 160px;
+    border: solid #95A5A6 2px;
+    background-color: #F0f0f0;
+}
+
+#atıktycol2a {
+    width: 35%;
+    height: 90%;
+    /*border:solid aqua 2px;*/
+}
+
+    #atıktycol2a img {
+        height: 100%;
+        width: 100%;
+    }
+
+.atıkysBody {
+    /*border: solid red 3px;*/
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 650px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+
+    .atıkysBody .container1 {
+        /*border: solid green 2px;*/
+        width: 100%;
+        height: 280px;
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+
+    .atıkysBody h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        color: #500d16;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+.atıkysBody {
+    margin-bottom: 20px;
+}
+
+    .atıkysBody p {
+        text-align: justify;
+        line-height: 1.9;
+    }
+
+    .atıkysBody br {
+        line-height: 2.5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
