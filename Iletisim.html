@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--
     sayfanın responsive olmasını sağlar-->
-    <title>AtıkYakma</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/reset.css" />
+    <title>İletisim</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css" />
     <!--sayfanın
     otomatik olarak bulundurduğu özellikleri sıfırlar-->
-    <link rel="stylesheet" type="text/css" href="/CSS/StyleSheet57.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').bxSlider();
-        });
-    </script>
-
+    <link rel="stylesheet" type="text/css" href="CSS/StyleSheet57.css" />
 </head>
 <body>
     <header>
@@ -30,69 +21,66 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="/Anasayfa.html">Anasayfa</a></li>
-                    <li><a href="/Hakkımızda.html">Hakkımızda</a></li>
-                    <li><a href="/Cozumlerimiz.html">Çözümlerimiz</a></li>
-                    <li><a href="/ReferansOneCıkanlar.html">Referanslarımız</a></li>
-                    <li><a href="/İletisimm.html">İletişim</a></li>
+                    <li><a href="Anasayfa.html">Anasayfa</a></li>
+                    <li><a href="Hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="Cozumlerimiz.html">Çözümlerimiz</a></li>
+                    <li><a href="ReferansOneCikanlar.html">Referanslarımız</a></li>
+                    <li><a href="Iletisim.html">İletişim</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--S L İ D E R-->
+    <section id="contactSlider" class="slider">
+        <div id="aboutCaption" class="caption">
 
-    <div class="slider">
-        <div class="pslider">
+            <marquee direction=left width=700 height="220" behavior="slide" scrollamount="27">
 
-            <img src="Images/Urun/atisllayt1.JPG" />
-        </div>
-        <div class="pslider">
+                <img src="../Images/contactYazısı.png" />
+            </marquee>
 
-
-            <img src="Images/Urun/atislayt2.JPG" />
 
         </div>
-        <!--<div class="pslider">
+    </section>
 
-            <img src="../Images/atıkyakmaS3.jpg" />
-        </div>-->
-        
-    </div>
-    <!--< P N O M A T İ K  B O D Y-->
-    <div class="atıkysBody">
+    <section id="contactmain" class="sectionArea">
 
-        <div class="container1">
-            <div id="pneucol1a" class="pneuCol1">
-                <h2>ATIK YAKMA SİSTEMİ</h2>
-                <p>
-                    Hastanelerde oluşan medikal atıkların çevreye ve halk sağlığına zarar vermeyecek şekilde, Avrupa Topluluğu EU-76/2000 direktiflerine uygun biçimde bertaraf edilmesi için tasarlanmış olan ATI incineratörleri, ihtiyaca göre değişen kapasiteleri ile küçük ölçekli hastane ve kliniklerden, belediyecilerce toplanan medikal atıkları yakacak özelliklere sahip bir çok değişik tipte ve kapasitede üretilmektedir.<br /><br /> 1930 yılından bu yana üretilmekte olan ATI (France) incineratörler Dünya'da altmıştan fazla ülkede yıllardır kullanılmaktadır ve özel filtreleme sistemi, en son teknolojilerin kullanıldığı yakma tekniği ile dikkati çekmektedir.
-                </p>
-            </div>
-            <div id="pneucol1b" class="pneuCol1">
-                <img src="Images/Urun/atıkyakma.jpg" />
-            </div>
-        </div>
-       
-        <div class="container5">
-            <div id="pneucol5a">
-                <h2 style="color:aliceblue"> .:BROŞÜRLER</h2>
-            </div>
-            <div id="atıkyscol5b">
+        <div class="mContactBody">
+            <div class="container">
+                <div class="col2">
+                    <div id="panel" class="contactbody">
+                        <h1>İletişim Formu</h1>
+                        <form action="https://formspree.io/mastermuhendislik2@gmail.com" method="post">
+                            <input type="text" placeholder="Adınızı Giriniz"><br>
+                            <input type="text" placeholder="Soyadınızı Giriniz"><br>
+                            <input type="text" placeholder="Telefon Numaranızı Giriniz"><br>
+                            <input type="email" placeholder="Email Adresinizi Giriniz"><br>
+                            <input id="explanation" type="text" placeholder="Açıklama">
+                            <button onclick="alert('İşlem Başarıyla gerçekleştirildi')">GÖNDER</button>
+                        </form>
 
-                <ul class="doc">
-                    <!--<li><a class="fancybox-media" href="genel-brosur/">Genel Broşür</a></li>-->
-                    <li><a class="fancybox-media" href="/Dosyalar/in1.pdf">HP Tip Incineratorler</a></li>
-                    <li><a class="fancybox-media" href="/Dosyalar/in2.pdf">CP Tip Incineratorler</a></li>
-                    <li><a class="fancybox-media" href="/Dosyalar//in3.pdf">Mobil Tip Incineratorler</a></li>
-                    <li><a class="fancybox-media" href="/Dosyalar/in4.pdf">Rotary Kilns Incineratorler</a></li>
-                    <li><a class="fancybox-media" href="/Dosyalar//in5.pdf">HP Serisi Incineratorler</a></li>
-                    <li><a class="fancybox-media" href="/Dosyalar/in6.pdf">Mobil Incineratorler</a></li>
-                </ul>
-
+                    </div>
+                </div>
+                <div class="col2">
+                    <div id="customerservice">
+                        <img src="../Images/callcenter.jpg" />
+                    </div>
+                    <h3 style="font-size:20px">MASTER MÜHENDİSLİK ve DIŞ TİCARET LTD. ŞTİ</h3>
+                    <div id="adress">
+                        <p>Adres   :Elmadağ Cad. No:6 Kat:6 Taksim - İSTANBUL </p>
+                        <p>Telefon :0212 240 83 33</p>
+                        <p>Fax     :0212 240 49 01</p>
+                        <p>Mail    :info@mastermuhendislik.com</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+    </section>
+    <section>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=171EzrnNjamjmG-TWImqtwLKxpQeTH7nq" width="640" height="480"></iframe>
+        </div>
+    </section>
     <!--F O O T E R  S E C T İ O N-->
     <footer class="sectionArea">
         <div class="container">
